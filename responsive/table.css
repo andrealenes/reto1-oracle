@@ -1,0 +1,11 @@
+button{
+    display: inline-block;
+    width: calc((90% - 1.5rem)/2);
+    
+}
+/* .form-button__copied{
+    position: absolute;
+    top: 650px;
+    right: 125px;
+    background: none;
+} */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="responsive/desktop.css" media="(min-width: 1000px">
+<link rel="stylesheet" href="responsive/table.css" media="(min-width: 600px)">    
+<title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img class="header-logo" src="./assets/logo.png" alt="">
+    </header>
+    <main>
+        <section class="section">
+            <section class="section-form">
+                <form class="form-container">
+                    <textarea type="text" rows="10" cols="50" class="input-user"placeholder="Ingrese el texto aquí" maxlength="200"></textarea>
+                </form>
+                <h6 class="form-alert"><span class="alert"></span> Solo letras minusculas y sin acentos</h6>
+                <div class="form-container">
+                    <button class= "form-button__encriptar" type="button" onclick="btnencriptar()">Encriptar</button>
+                    <button class="form-button__desencriptar" type="button" onclick="btndesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section class="container-answer">
+                <textarea type="text" rows="10" cols="50" class="container-answer__textarea"></textarea>
+                    <!-- <button class= "form-button__encriptar"type="button">Encriptar</button> -->
+                    <button class="form-button__copied" type="button" onclick="copyAnswer()">Copiar</button>
+            </section>
+        </section>
+    </main>
+</body>
+<Script src="js/index.js"></Script>
+
+</html>
